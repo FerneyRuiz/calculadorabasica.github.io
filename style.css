@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #202020, #101010);
+}
+
+.calculator {
+  width: 400px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.display {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  color: #070707;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dark-gradient {
+  background: linear-gradient(45deg, #2f3030, #ffffff);
+}
+
+.orange-gradient {
+  background: linear-gradient(45deg, #643a2e, #d66a22);
+}
+
+.green-gradient {
+  background: linear-gradient(45deg, #2b6363, #40d8f3);
+}
+
+.clear-btn {
+  background: linear-gradient(45deg, #633632, #ee3535);
+}
+
+.zero-btn {
+  grid-column: span 2;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
